@@ -1,5 +1,5 @@
 # Live Search for Github Users
-An auto-suggesting search bar powered by search api provided by Github 
+An auto-suggesting search bar powered by Github's search api
 
 ## 1. Set-up instructions
     1. Fork the repository
