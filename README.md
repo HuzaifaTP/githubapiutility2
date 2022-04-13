@@ -14,4 +14,4 @@ An auto-suggesting search bar powered by search api provided by Github
 1. Front-end: React (Javascript library)
 2. Back-end: github Search & github Users API
      - End-point: https://api.github.com/users/{user}/repos:%3E0+followers:%3E0
-        - GET response: Repository data corresponding to "user"
+        - GET response: Repository data corresponding to "user" from which only image URL was used for demonstration
