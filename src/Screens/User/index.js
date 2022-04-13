@@ -7,14 +7,13 @@ import { API_search } from "../../api/index";
 import { v4 as uuidv4 } from "uuid";
 import UserSearch from "./components/user-search";
 
-
 function User() {
   const [userName, setUserName] = useState("");
   const [userNameOptions, setUserNameOptions] = useState();
   const [user, setUser] = useState();
 
   useEffect(() => {
-    console.log(userName)
+    console.log(userName);
     let arr = [];
     const fetchUsers = async () => {
       const res = await API_search.get(
@@ -24,7 +23,7 @@ function User() {
       res.data.items.map((eachUser) => {
         arr.push(eachUser.login);
       });
-      console.log(userNameOptions)
+      // console.log(userNameOptions);
     };
     setUserNameOptions(arr);
     fetchUsers();
@@ -52,8 +51,11 @@ function User() {
           </Box>
         )}
         renderInput={(params) => (
-          <TextField onChange = {e=>setUserName(e.target.value) } 
-          {...params} label="Search for a Github user" />
+          <TextField
+            onChange={(e) => setUserName(e.target.value)}
+            {...params}
+            label="Search for a Github user"
+          />
         )}
       />
       <button
@@ -62,11 +64,8 @@ function User() {
       >
         Search
       </button>
-    <UserSearch username  = {user}/>
-    {console.log(userName)}
+      <UserSearch username={user} />
     </Stack>
-    
-    
   );
 }
 
