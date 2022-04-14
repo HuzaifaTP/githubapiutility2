@@ -1,0 +1,10 @@
+.list-item-container {
+    display: flex;
+    padding: 3px;
+    border: 1px solid #000000;
+    width: 150px
+  }
+  .center {
+    flex: 4;
+  }
+  

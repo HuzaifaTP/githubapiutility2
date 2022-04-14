@@ -8,6 +8,8 @@
     "@mui/material": "^5.6.1",
     "@mui/styled-engine-sc": "^5.6.1",
     "axios": "^0.26.1",
+    "debounce": "^1.2.1",
+    "lodash.debounce": "^4.0.8",
     "react": "^18.0.0",
     "react-async-select": "^0.2.6",
     "react-dom": "^18.0.0",
