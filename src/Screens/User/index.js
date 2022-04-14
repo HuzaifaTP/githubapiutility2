@@ -57,7 +57,7 @@ function User() {
         isOptionEqualToValue={(option, value) =>
           option.userNameOptions === value.userNameOptions
         }
-        noOptionsText={""}
+        noOptionsText={"Expand to View Suggestions"}
         renderOption={(props, userNameOptions) => (
           <Box component="li" {...props} key={uuidv4()}>
             {userNameOptions}
